@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		163C9CE485FE0199C359725EA6A8FDBB /* DJCaptureButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B1B1191DE0FDBEFF57F1F992AE58C0 /* DJCaptureButton-dummy.m */; };
+		172D59B65A34EF4904DC405AE97757F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		39D1F2B4DEFC51ADA1C44B2116098B2D /* Pods-DJCaptureButton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C665CBE0A1ED4EB61E88321A5B182F /* Pods-DJCaptureButton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4084AD515ABACE08ABD74C8FD867842C /* Pods-DJCaptureButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C6F85CC0622525D8D1C4409A3FD3F8 /* Pods-DJCaptureButton_Example-dummy.m */; };
+		421048CD8D8DF8DCBDEF68E058394FA0 /* DJCaptureButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39D05E34F07B25D19F4BA2947FD3D036 /* DJCaptureButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5196862F213953560044E606 /* ForceTouchGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196862C213953560044E606 /* ForceTouchGestureRecognizer.swift */; };
+		51968630213953560044E606 /* UIView+forceTouchCapabilityAvailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196862D213953560044E606 /* UIView+forceTouchCapabilityAvailable.swift */; };
+		51968631213953560044E606 /* CaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196862E213953560044E606 /* CaptureButton.swift */; };
+		6EA905AC233686A538943B0E94BC157F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		74C7E6795DB64C205EC483B4CFC59937 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		94CB16345AEFA4B9F5CE36EA54F6F617 /* Pods-DJCaptureButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36C9BC1548E64FB0E29D39373173911B /* Pods-DJCaptureButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E51916CE6B3920637177AD224DB6B6E7 /* Pods-DJCaptureButton_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D92CC425CD40BA59E2843F4B2E7849B /* Pods-DJCaptureButton_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B91C71953C7A83CCD2D03EFB3F4E00CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E94D121576F304D615B8374179968F3;
+			remoteInfo = "Pods-DJCaptureButton_Example";
+		};
+		F0EB3C037220DA54BD1F7496D2BF0C0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8C5B1AD4083DF8110BA4A88FE1543F4;
+			remoteInfo = DJCaptureButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03AED9A98CC995EF9C30F970481C328F /* DJCaptureButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJCaptureButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EE645A41E76CDAC3F626A3F39FD428C /* Pods-DJCaptureButton_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DJCaptureButton_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1668FC4E80FCCA555D0C872C98E09ACC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1C8BCD3F0777283E20AD7610DA7429A1 /* Pods-DJCaptureButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DJCaptureButton_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1E1278905EEE4585934D27E3F56F0AAE /* Pods-DJCaptureButton_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DJCaptureButton_Tests-resources.sh"; sourceTree = "<group>"; };
+		20E49D6C1E1B06FC30662BC475C306E6 /* Pods-DJCaptureButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DJCaptureButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		256AEC94F5497869CF75A938BED70B8B /* Pods-DJCaptureButton_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DJCaptureButton_Example-resources.sh"; sourceTree = "<group>"; };
+		28FA1E342C7002EDDF2189D83729EBFD /* Pods_DJCaptureButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DJCaptureButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B1E12FE9FEB335FDC34E7F17C699211 /* Pods-DJCaptureButton_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DJCaptureButton_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2F46D2EFE0B50609889042D8AB343D40 /* Pods-DJCaptureButton_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DJCaptureButton_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		30C6F85CC0622525D8D1C4409A3FD3F8 /* Pods-DJCaptureButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DJCaptureButton_Example-dummy.m"; sourceTree = "<group>"; };
+		36C9BC1548E64FB0E29D39373173911B /* Pods-DJCaptureButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DJCaptureButton_Example-umbrella.h"; sourceTree = "<group>"; };
+		39D05E34F07B25D19F4BA2947FD3D036 /* DJCaptureButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DJCaptureButton-umbrella.h"; sourceTree = "<group>"; };
+		5196862C213953560044E606 /* ForceTouchGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForceTouchGestureRecognizer.swift; path = DJCaptureButton/Classes/ForceTouchGestureRecognizer.swift; sourceTree = "<group>"; };
+		5196862D213953560044E606 /* UIView+forceTouchCapabilityAvailable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+forceTouchCapabilityAvailable.swift"; path = "DJCaptureButton/Classes/UIView+forceTouchCapabilityAvailable.swift"; sourceTree = "<group>"; };
+		5196862E213953560044E606 /* CaptureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CaptureButton.swift; path = DJCaptureButton/Classes/CaptureButton.swift; sourceTree = "<group>"; };
+		588D43B13C669AA13CF261F9310C5734 /* Pods_DJCaptureButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DJCaptureButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C665CBE0A1ED4EB61E88321A5B182F /* Pods-DJCaptureButton_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DJCaptureButton_Tests-umbrella.h"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		68034D2F3EC8FB6B7237EEB21F6DD7D7 /* Pods-DJCaptureButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DJCaptureButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6D92CC425CD40BA59E2843F4B2E7849B /* Pods-DJCaptureButton_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DJCaptureButton_Tests-dummy.m"; sourceTree = "<group>"; };
+		7E8FEACC67F2B82E42E6028EEC844891 /* DJCaptureButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DJCaptureButton-prefix.pch"; sourceTree = "<group>"; };
+		8887F6B5021BFE28381BC00F36C622B3 /* Pods-DJCaptureButton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DJCaptureButton_Tests.modulemap"; sourceTree = "<group>"; };
+		8E70DA335F2316DCA657B6B69E8E8010 /* DJCaptureButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DJCaptureButton.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A372801138D4D6EF12D1CA9773AA8FE0 /* Pods-DJCaptureButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DJCaptureButton_Example.modulemap"; sourceTree = "<group>"; };
+		A550D95E9FCCCAAE75CA790CF0AE12E5 /* DJCaptureButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = DJCaptureButton.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A6EAEA1353DBE5D5A88868056DE4904F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDA3F238BB2424D965D83D18EF32E9E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BF936BC47FE986626F4674635B9E73D7 /* DJCaptureButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DJCaptureButton.modulemap; sourceTree = "<group>"; };
+		C4B1B1191DE0FDBEFF57F1F992AE58C0 /* DJCaptureButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DJCaptureButton-dummy.m"; sourceTree = "<group>"; };
+		CE3127671422D1B07227C95364620A85 /* Pods-DJCaptureButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DJCaptureButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D02D56CBEC2A19489900820E7F57F4E5 /* Pods-DJCaptureButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DJCaptureButton_Example-frameworks.sh"; sourceTree = "<group>"; };
+		E69E62A79061B2127313A05A275C8B56 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7AEFBE034591E1B8880A83918AFBFA /* Pods-DJCaptureButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DJCaptureButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		ED5AE9B412815AE0B6A27966F7EE849C /* Pods-DJCaptureButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DJCaptureButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FD6DABB67BAF78F4F621C93272D74B36 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11D24FD751E68662FC624A485C78C596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA905AC233686A538943B0E94BC157F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D6CDC5C410D50BBCA2F40B406DA5A50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74C7E6795DB64C205EC483B4CFC59937 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E58078168EA77BD5B1D60BD641C8758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172D59B65A34EF4904DC405AE97757F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02E34CC69555CA75A9A64FD9EB9DC5F0 /* Pods-DJCaptureButton_Example */ = {
+			isa = PBXGroup;
+			children = (
+				E69E62A79061B2127313A05A275C8B56 /* Info.plist */,
+				A372801138D4D6EF12D1CA9773AA8FE0 /* Pods-DJCaptureButton_Example.modulemap */,
+				68034D2F3EC8FB6B7237EEB21F6DD7D7 /* Pods-DJCaptureButton_Example-acknowledgements.markdown */,
+				20E49D6C1E1B06FC30662BC475C306E6 /* Pods-DJCaptureButton_Example-acknowledgements.plist */,
+				30C6F85CC0622525D8D1C4409A3FD3F8 /* Pods-DJCaptureButton_Example-dummy.m */,
+				D02D56CBEC2A19489900820E7F57F4E5 /* Pods-DJCaptureButton_Example-frameworks.sh */,
+				256AEC94F5497869CF75A938BED70B8B /* Pods-DJCaptureButton_Example-resources.sh */,
+				36C9BC1548E64FB0E29D39373173911B /* Pods-DJCaptureButton_Example-umbrella.h */,
+				ED5AE9B412815AE0B6A27966F7EE849C /* Pods-DJCaptureButton_Example.debug.xcconfig */,
+				1C8BCD3F0777283E20AD7610DA7429A1 /* Pods-DJCaptureButton_Example.release.xcconfig */,
+			);
+			name = "Pods-DJCaptureButton_Example";
+			path = "Target Support Files/Pods-DJCaptureButton_Example";
+			sourceTree = "<group>";
+		};
+		20E29C68533FEDF1BF40B079C44E18EA /* Pods-DJCaptureButton_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A6EAEA1353DBE5D5A88868056DE4904F /* Info.plist */,
+				8887F6B5021BFE28381BC00F36C622B3 /* Pods-DJCaptureButton_Tests.modulemap */,
+				0EE645A41E76CDAC3F626A3F39FD428C /* Pods-DJCaptureButton_Tests-acknowledgements.markdown */,
+				2B1E12FE9FEB335FDC34E7F17C699211 /* Pods-DJCaptureButton_Tests-acknowledgements.plist */,
+				6D92CC425CD40BA59E2843F4B2E7849B /* Pods-DJCaptureButton_Tests-dummy.m */,
+				2F46D2EFE0B50609889042D8AB343D40 /* Pods-DJCaptureButton_Tests-frameworks.sh */,
+				1E1278905EEE4585934D27E3F56F0AAE /* Pods-DJCaptureButton_Tests-resources.sh */,
+				61C665CBE0A1ED4EB61E88321A5B182F /* Pods-DJCaptureButton_Tests-umbrella.h */,
+				CE3127671422D1B07227C95364620A85 /* Pods-DJCaptureButton_Tests.debug.xcconfig */,
+				EC7AEFBE034591E1B8880A83918AFBFA /* Pods-DJCaptureButton_Tests.release.xcconfig */,
+			);
+			name = "Pods-DJCaptureButton_Tests";
+			path = "Target Support Files/Pods-DJCaptureButton_Tests";
+			sourceTree = "<group>";
+		};
+		2CECC0C4B4C58777B1F159EA8657BF20 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF936BC47FE986626F4674635B9E73D7 /* DJCaptureButton.modulemap */,
+				8E70DA335F2316DCA657B6B69E8E8010 /* DJCaptureButton.xcconfig */,
+				C4B1B1191DE0FDBEFF57F1F992AE58C0 /* DJCaptureButton-dummy.m */,
+				7E8FEACC67F2B82E42E6028EEC844891 /* DJCaptureButton-prefix.pch */,
+				39D05E34F07B25D19F4BA2947FD3D036 /* DJCaptureButton-umbrella.h */,
+				FD6DABB67BAF78F4F621C93272D74B36 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DJCaptureButton";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				E8B07164F6667B5ADF5186BF899E94D6 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F018D456C2F68F514E7C3D2250E2613D /* Products */,
+				B14B7C54507215A6F51660B114CB7F61 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B14B7C54507215A6F51660B114CB7F61 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				02E34CC69555CA75A9A64FD9EB9DC5F0 /* Pods-DJCaptureButton_Example */,
+				20E29C68533FEDF1BF40B079C44E18EA /* Pods-DJCaptureButton_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5BFEB1C55C4520E1966C6668380C515 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A550D95E9FCCCAAE75CA790CF0AE12E5 /* DJCaptureButton.podspec */,
+				BDA3F238BB2424D965D83D18EF32E9E1 /* LICENSE */,
+				1668FC4E80FCCA555D0C872C98E09ACC /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E8B07164F6667B5ADF5186BF899E94D6 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9C3A7BF3F634AF0971E65A87A723F14 /* DJCaptureButton */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		E9C3A7BF3F634AF0971E65A87A723F14 /* DJCaptureButton */ = {
+			isa = PBXGroup;
+			children = (
+				5196862E213953560044E606 /* CaptureButton.swift */,
+				5196862C213953560044E606 /* ForceTouchGestureRecognizer.swift */,
+				5196862D213953560044E606 /* UIView+forceTouchCapabilityAvailable.swift */,
+				C5BFEB1C55C4520E1966C6668380C515 /* Pod */,
+				2CECC0C4B4C58777B1F159EA8657BF20 /* Support Files */,
+			);
+			name = DJCaptureButton;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F018D456C2F68F514E7C3D2250E2613D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03AED9A98CC995EF9C30F970481C328F /* DJCaptureButton.framework */,
+				588D43B13C669AA13CF261F9310C5734 /* Pods_DJCaptureButton_Example.framework */,
+				28FA1E342C7002EDDF2189D83729EBFD /* Pods_DJCaptureButton_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		023B54CBA290291A055806C207C82E2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94CB16345AEFA4B9F5CE36EA54F6F617 /* Pods-DJCaptureButton_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD7547C5D4BE0B90F430AFC12383D8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421048CD8D8DF8DCBDEF68E058394FA0 /* DJCaptureButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC608A6A02F27C7C95F1882BDC5F07D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D1F2B4DEFC51ADA1C44B2116098B2D /* Pods-DJCaptureButton_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6E94D121576F304D615B8374179968F3 /* Pods-DJCaptureButton_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8036E9E1E1AFE5F1C8C895B1272FEC54 /* Build configuration list for PBXNativeTarget "Pods-DJCaptureButton_Example" */;
+			buildPhases = (
+				83B9F3596441767251A6669F45CD40B0 /* Sources */,
+				7E58078168EA77BD5B1D60BD641C8758 /* Frameworks */,
+				023B54CBA290291A055806C207C82E2D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64ADFFEA077E41F87D045036BB3D9352 /* PBXTargetDependency */,
+			);
+			name = "Pods-DJCaptureButton_Example";
+			productName = "Pods-DJCaptureButton_Example";
+			productReference = 588D43B13C669AA13CF261F9310C5734 /* Pods_DJCaptureButton_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AFDF2948AC4C070440BA2695039FB247 /* Pods-DJCaptureButton_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0842E6C5B8C3D1DAA61A6C361E010FA1 /* Build configuration list for PBXNativeTarget "Pods-DJCaptureButton_Tests" */;
+			buildPhases = (
+				7435CFFBD6D29152618DB31E48AD441C /* Sources */,
+				1D6CDC5C410D50BBCA2F40B406DA5A50 /* Frameworks */,
+				FEC608A6A02F27C7C95F1882BDC5F07D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9885BD5553ACA7CC11E98BB76508440 /* PBXTargetDependency */,
+			);
+			name = "Pods-DJCaptureButton_Tests";
+			productName = "Pods-DJCaptureButton_Tests";
+			productReference = 28FA1E342C7002EDDF2189D83729EBFD /* Pods_DJCaptureButton_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C8C5B1AD4083DF8110BA4A88FE1543F4 /* DJCaptureButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ECCF226EB46153958615D892FF1DE1E /* Build configuration list for PBXNativeTarget "DJCaptureButton" */;
+			buildPhases = (
+				8FE3E008BB7316358C8D814CFB3D7F2F /* Sources */,
+				11D24FD751E68662FC624A485C78C596 /* Frameworks */,
+				3CD7547C5D4BE0B90F430AFC12383D8D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DJCaptureButton;
+			productName = DJCaptureButton;
+			productReference = 03AED9A98CC995EF9C30F970481C328F /* DJCaptureButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F018D456C2F68F514E7C3D2250E2613D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8C5B1AD4083DF8110BA4A88FE1543F4 /* DJCaptureButton */,
+				6E94D121576F304D615B8374179968F3 /* Pods-DJCaptureButton_Example */,
+				AFDF2948AC4C070440BA2695039FB247 /* Pods-DJCaptureButton_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7435CFFBD6D29152618DB31E48AD441C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E51916CE6B3920637177AD224DB6B6E7 /* Pods-DJCaptureButton_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B9F3596441767251A6669F45CD40B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4084AD515ABACE08ABD74C8FD867842C /* Pods-DJCaptureButton_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE3E008BB7316358C8D814CFB3D7F2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				163C9CE485FE0199C359725EA6A8FDBB /* DJCaptureButton-dummy.m in Sources */,
+				51968631213953560044E606 /* CaptureButton.swift in Sources */,
+				5196862F213953560044E606 /* ForceTouchGestureRecognizer.swift in Sources */,
+				51968630213953560044E606 /* UIView+forceTouchCapabilityAvailable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64ADFFEA077E41F87D045036BB3D9352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DJCaptureButton;
+			target = C8C5B1AD4083DF8110BA4A88FE1543F4 /* DJCaptureButton */;
+			targetProxy = F0EB3C037220DA54BD1F7496D2BF0C0C /* PBXContainerItemProxy */;
+		};
+		C9885BD5553ACA7CC11E98BB76508440 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DJCaptureButton_Example";
+			target = 6E94D121576F304D615B8374179968F3 /* Pods-DJCaptureButton_Example */;
+			targetProxy = B91C71953C7A83CCD2D03EFB3F4E00CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		120A2548341929A8899D6FBC239988F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C8BCD3F0777283E20AD7610DA7429A1 /* Pods-DJCaptureButton_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DJCaptureButton_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DJCaptureButton_Example/Pods-DJCaptureButton_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		29A255CB86D029FFC82DFF597D82EC82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE3127671422D1B07227C95364620A85 /* Pods-DJCaptureButton_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DJCaptureButton_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DJCaptureButton_Tests/Pods-DJCaptureButton_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E51093CBBAAE5237F059469A0DFB0AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC7AEFBE034591E1B8880A83918AFBFA /* Pods-DJCaptureButton_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DJCaptureButton_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DJCaptureButton_Tests/Pods-DJCaptureButton_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		73BB39C38A0AA3494261692393801D8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E70DA335F2316DCA657B6B69E8E8010 /* DJCaptureButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DJCaptureButton/DJCaptureButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DJCaptureButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DJCaptureButton/DJCaptureButton.modulemap";
+				PRODUCT_MODULE_NAME = DJCaptureButton;
+				PRODUCT_NAME = DJCaptureButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B9551C59FD04ADDAB8DC91C243958EC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E70DA335F2316DCA657B6B69E8E8010 /* DJCaptureButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DJCaptureButton/DJCaptureButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DJCaptureButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DJCaptureButton/DJCaptureButton.modulemap";
+				PRODUCT_MODULE_NAME = DJCaptureButton;
+				PRODUCT_NAME = DJCaptureButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F2E6FA3389CDADDBFE103314CAFFA10B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED5AE9B412815AE0B6A27966F7EE849C /* Pods-DJCaptureButton_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DJCaptureButton_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DJCaptureButton_Example/Pods-DJCaptureButton_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0842E6C5B8C3D1DAA61A6C361E010FA1 /* Build configuration list for PBXNativeTarget "Pods-DJCaptureButton_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29A255CB86D029FFC82DFF597D82EC82 /* Debug */,
+				5E51093CBBAAE5237F059469A0DFB0AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ECCF226EB46153958615D892FF1DE1E /* Build configuration list for PBXNativeTarget "DJCaptureButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9551C59FD04ADDAB8DC91C243958EC7 /* Debug */,
+				73BB39C38A0AA3494261692393801D8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
+				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8036E9E1E1AFE5F1C8C895B1272FEC54 /* Build configuration list for PBXNativeTarget "Pods-DJCaptureButton_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2E6FA3389CDADDBFE103314CAFFA10B /* Debug */,
+				120A2548341929A8899D6FBC239988F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

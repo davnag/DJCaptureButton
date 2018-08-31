@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DJCaptureButton_Example' do
+  pod 'DJCaptureButton', :path => '../'
+
+  target 'DJCaptureButton_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

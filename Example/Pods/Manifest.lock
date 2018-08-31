@@ -1,0 +1,16 @@
+PODS:
+  - DJCaptureButton (0.1.0)
+
+DEPENDENCIES:
+  - DJCaptureButton (from `../`)
+
+EXTERNAL SOURCES:
+  DJCaptureButton:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DJCaptureButton: 57843e7abc814f905f566a20f74b7eb5a7f9d09f
+
+PODFILE CHECKSUM: a344d366ac908520f006ef78d0313a2c9a1bcb22
+
+COCOAPODS: 1.5.3
