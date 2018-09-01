@@ -1,6 +1,6 @@
 # DJCaptureButton
 
-![Alt Text](https://github.com/davnag/DJCaptureButton/DJCaptureButton.gif)
+![Alt Text](https://raw.githubusercontent.com/davnag/DJCaptureButton/develop/DJCaptureButton.gif)
 
 ## Example
 
@@ -21,7 +21,7 @@ pod 'DJCaptureButton'
 
 ## Author
 
-David Jonsén
+David Jonsén
 
 ## License
 
