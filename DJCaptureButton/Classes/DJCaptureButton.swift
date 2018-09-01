@@ -9,13 +9,13 @@
 import UIKit
 
 @objc
-public protocol CaptureButtonDelegate: class {
+public protocol DJCaptureButtonDelegate: class {
 
-    func captureButtonDidFire(captureButton: CaptureButton)
+    func captureButtonDidFire(captureButton: DJCaptureButton)
 }
 
 @IBDesignable
-open class CaptureButton: UIButton {
+open class DJCaptureButton: UIButton {
 
     // MARK: - IBInspectable
 
@@ -45,7 +45,7 @@ open class CaptureButton: UIButton {
 
     // MARK: - Public
 
-    public weak var delegate: CaptureButtonDelegate?
+    @IBOutlet public weak var delegate: DJCaptureButtonDelegate?
 
     public var generateFeedback: Bool = true
 
@@ -104,7 +104,7 @@ open class CaptureButton: UIButton {
     }
 }
 
-extension CaptureButton {
+extension DJCaptureButton {
 
     internal func setupButton() {
 
@@ -148,7 +148,7 @@ extension CaptureButton {
     }
 }
 
-extension CaptureButton {
+extension DJCaptureButton {
 
     @objc
     internal func handleTap(gesture: ForceTouchGestureRecognizer) {
@@ -192,7 +192,7 @@ extension CaptureButton {
     }
 }
 
-extension CaptureButton {
+extension DJCaptureButton {
 
     internal func resetMiddleCircle(delay milliseconds: Int = 0) {
 
@@ -211,7 +211,7 @@ extension CaptureButton {
     }
 }
 
-extension CaptureButton {
+extension DJCaptureButton {
 
     public func animateTapGesture() {
 
@@ -221,7 +221,7 @@ extension CaptureButton {
     }
 }
 
-extension CaptureButton: UIGestureRecognizerDelegate {
+extension DJCaptureButton: UIGestureRecognizerDelegate {
 
      public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
 

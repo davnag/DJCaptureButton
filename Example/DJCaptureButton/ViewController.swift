@@ -6,19 +6,29 @@
 //  Copyright (c) 2018 David Jonsén. All rights reserved.
 //
 
+import DJCaptureButton
 import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var previewLabel: UILabel!
+
+    @IBOutlet weak var captureButton: DJCaptureButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 
+
+extension ViewController: DJCaptureButtonDelegate {
+
+    func captureButtonDidFire(captureButton: DJCaptureButton) {
+
+        previewLabel.text = "📸"
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100)) {
+            self.previewLabel.text = "📷"
+        }
+    }
+}
