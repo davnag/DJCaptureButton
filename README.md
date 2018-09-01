@@ -1,7 +1,6 @@
 # DJCaptureButton
 
-<img src="https://raw.githubusercontent.com/davnag/DJCaptureButton/develop/DJCaptureButton.gif" width="220" height="auto">
-
+![image](ReadMeAssets/DJCaptureButton.gif)
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -18,6 +17,25 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'DJCaptureButton'
 ```
+
+## Usage
+
+1. Add a UIButton in Interface Builder.
+2. Set the "class" property to DJCaptureButton.
+4. Connect the delegate.
+
+![image](ReadMeAssets/connect-delegate.png)
+
+See the *Example* Project.
+
+## Configuration
+Additional properties are available in the Attribute inspector:
+
+![image](ReadMeAssets/customize-button.png)
+
+## Result
+
+![image](ReadMeAssets/add-to-view.png)
 
 ## Author
 
