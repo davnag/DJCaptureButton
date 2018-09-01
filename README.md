@@ -1,6 +1,6 @@
 # DJCaptureButton
 
-![Alt Text](https://raw.githubusercontent.com/davnag/DJCaptureButton/develop/DJCaptureButton.gif)
+<img src="https://raw.githubusercontent.com/davnag/DJCaptureButton/develop/DJCaptureButton.gif" width="220" height="auto">
 
 ## Example
 
