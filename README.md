@@ -37,7 +37,7 @@ view.addSubview(captureButton)
 extension ViewController: DJCaptureButtonDelegate {
 
     func captureButtonDidFire(captureButton: DJCaptureButton) {
-      debugPrint("Capture button action")
+        debugPrint("Capture button action")
     }
 }
 
