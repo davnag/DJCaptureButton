@@ -9,13 +9,13 @@
 import UIKit
 
 @objc
-public protocol CaptureButtonDelegate: class {
+public protocol DJCaptureButtonDelegate: class {
 
-    func captureButtonDidFire(captureButton: CaptureButton)
+    func captureButtonDidFire(captureButton: DJCaptureButton)
 }
 
 @IBDesignable
-open class CaptureButton: UIButton {
+open class DJCaptureButton: UIButton {
 
     // MARK: - IBInspectable
 
@@ -45,13 +45,13 @@ open class CaptureButton: UIButton {
 
     // MARK: - Public
 
-    public weak var delegate: CaptureButtonDelegate?
+    @IBOutlet public weak var delegate: DJCaptureButtonDelegate?
 
     public var generateFeedback: Bool = true
 
-    internal lazy var impactFeedbackGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .light)
-
     // MARK: - Internal
+
+    internal lazy var impactFeedbackGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .light)
 
     internal var forceTouchGestureRecognizer: ForceTouchGestureRecognizer?
 
@@ -104,7 +104,9 @@ open class CaptureButton: UIButton {
     }
 }
 
-extension CaptureButton {
+// MARK: - Setup
+
+extension DJCaptureButton {
 
     internal func setupButton() {
 
@@ -137,25 +139,21 @@ extension CaptureButton {
         let forceGesture = ForceTouchGestureRecognizer(target: self, action: #selector(handleForce))
         forceGesture.delegate = self
         addGestureRecognizer(forceGesture)
+
         forceTouchGestureRecognizer = forceGesture
-    }
-
-    internal func updateMiddleCircle() {
-
-        let offset = borderWidth + middleCircleOffset
-
-        middleCircle.path = UIBezierPath(ovalIn: CGRect(x: offset, y: offset, width: bounds.width - (offset * 2), height: bounds.height - (offset * 2))).cgPath
     }
 }
 
-extension CaptureButton {
+// MARK: -
+
+extension DJCaptureButton {
 
     @objc
-    internal func handleTap(gesture: ForceTouchGestureRecognizer) {
+    internal func handleTap(gesture: UITapGestureRecognizer) {
 
         animateTapGesture()
 
-        fireButton()
+        captureButtonFireAction()
     }
 
     @objc
@@ -165,11 +163,21 @@ extension CaptureButton {
 
         case .ended, .cancelled:
 
+            if tapGestureRecognizer.isEnabled == false {
+                captureButtonFireAction()
+            }
+
+            gesture.isEnabled = true
+
             resetMiddleCircle(delay: 100)
 
             tapGestureRecognizer.isEnabled = true
 
         case .changed:
+
+            if  tapGestureRecognizer.isEnabled {
+                tapGestureRecognizer.isEnabled = false
+            }
 
             let scale = 1 - min(gesture.force, 0.2)
 
@@ -179,12 +187,9 @@ extension CaptureButton {
                 return
             }
 
-            tapGestureRecognizer.isEnabled = false
-
             gesture.isEnabled = false
-            gesture.isEnabled = true
 
-            fireButton()
+//            fireButton()
 
         default:
             break
@@ -192,7 +197,14 @@ extension CaptureButton {
     }
 }
 
-extension CaptureButton {
+extension DJCaptureButton {
+
+    internal func updateMiddleCircle() {
+
+        let offset = borderWidth + middleCircleOffset
+
+        middleCircle.path = UIBezierPath(ovalIn: CGRect(x: offset, y: offset, width: bounds.width - (offset * 2), height: bounds.height - (offset * 2))).cgPath
+    }
 
     internal func resetMiddleCircle(delay milliseconds: Int = 0) {
 
@@ -201,7 +213,7 @@ extension CaptureButton {
         }
     }
 
-    internal func fireButton() {
+    internal func captureButtonFireAction() {
 
         if generateFeedback {
             impactFeedbackGenerator.impactOccurred()
@@ -211,7 +223,7 @@ extension CaptureButton {
     }
 }
 
-extension CaptureButton {
+extension DJCaptureButton {
 
     public func animateTapGesture() {
 
@@ -221,7 +233,9 @@ extension CaptureButton {
     }
 }
 
-extension CaptureButton: UIGestureRecognizerDelegate {
+// MARK: - UIGestureRecognizerDelegate
+
+extension DJCaptureButton: UIGestureRecognizerDelegate {
 
      public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
 

@@ -14,7 +14,7 @@
 		421048CD8D8DF8DCBDEF68E058394FA0 /* DJCaptureButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39D05E34F07B25D19F4BA2947FD3D036 /* DJCaptureButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5196862F213953560044E606 /* ForceTouchGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196862C213953560044E606 /* ForceTouchGestureRecognizer.swift */; };
 		51968630213953560044E606 /* UIView+forceTouchCapabilityAvailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196862D213953560044E606 /* UIView+forceTouchCapabilityAvailable.swift */; };
-		51968631213953560044E606 /* CaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196862E213953560044E606 /* CaptureButton.swift */; };
+		51968631213953560044E606 /* DJCaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196862E213953560044E606 /* DJCaptureButton.swift */; };
 		6EA905AC233686A538943B0E94BC157F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		74C7E6795DB64C205EC483B4CFC59937 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		94CB16345AEFA4B9F5CE36EA54F6F617 /* Pods-DJCaptureButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36C9BC1548E64FB0E29D39373173911B /* Pods-DJCaptureButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,7 +54,7 @@
 		39D05E34F07B25D19F4BA2947FD3D036 /* DJCaptureButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DJCaptureButton-umbrella.h"; sourceTree = "<group>"; };
 		5196862C213953560044E606 /* ForceTouchGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForceTouchGestureRecognizer.swift; path = DJCaptureButton/Classes/ForceTouchGestureRecognizer.swift; sourceTree = "<group>"; };
 		5196862D213953560044E606 /* UIView+forceTouchCapabilityAvailable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+forceTouchCapabilityAvailable.swift"; path = "DJCaptureButton/Classes/UIView+forceTouchCapabilityAvailable.swift"; sourceTree = "<group>"; };
-		5196862E213953560044E606 /* CaptureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CaptureButton.swift; path = DJCaptureButton/Classes/CaptureButton.swift; sourceTree = "<group>"; };
+		5196862E213953560044E606 /* DJCaptureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DJCaptureButton.swift; path = DJCaptureButton/Classes/DJCaptureButton.swift; sourceTree = "<group>"; };
 		588D43B13C669AA13CF261F9310C5734 /* Pods_DJCaptureButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DJCaptureButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C665CBE0A1ED4EB61E88321A5B182F /* Pods-DJCaptureButton_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DJCaptureButton_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -213,7 +213,7 @@
 		E9C3A7BF3F634AF0971E65A87A723F14 /* DJCaptureButton */ = {
 			isa = PBXGroup;
 			children = (
-				5196862E213953560044E606 /* CaptureButton.swift */,
+				5196862E213953560044E606 /* DJCaptureButton.swift */,
 				5196862C213953560044E606 /* ForceTouchGestureRecognizer.swift */,
 				5196862D213953560044E606 /* UIView+forceTouchCapabilityAvailable.swift */,
 				C5BFEB1C55C4520E1966C6668380C515 /* Pod */,
@@ -366,7 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				163C9CE485FE0199C359725EA6A8FDBB /* DJCaptureButton-dummy.m in Sources */,
-				51968631213953560044E606 /* CaptureButton.swift in Sources */,
+				51968631213953560044E606 /* DJCaptureButton.swift in Sources */,
 				5196862F213953560044E606 /* ForceTouchGestureRecognizer.swift in Sources */,
 				51968630213953560044E606 /* UIView+forceTouchCapabilityAvailable.swift in Sources */,
 			);
