@@ -32,12 +32,12 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="📷" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjR-Ch-BxZ">
-                                <rect key="frame" x="108.5" y="28" width="158" height="125"/>
+                                <rect key="frame" x="90" y="200" width="195" height="115"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="158" id="2pJ-qv-aLk"/>
-                                    <constraint firstAttribute="height" constant="125" id="NYv-kz-SfN"/>
+                                    <constraint firstAttribute="width" constant="195" id="2pJ-qv-aLk"/>
+                                    <constraint firstAttribute="height" constant="115" id="NYv-kz-SfN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -47,7 +47,7 @@
                             <constraint firstItem="geG-v9-ihz" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="DYN-Om-Co6"/>
                             <constraint firstItem="KjR-Ch-BxZ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Ugx-e7-8Iy"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="geG-v9-ihz" secondAttribute="bottom" constant="45" id="goZ-wu-pcf"/>
-                            <constraint firstItem="KjR-Ch-BxZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="lgM-BN-oF6"/>
+                            <constraint firstItem="KjR-Ch-BxZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="180" id="lgM-BN-oF6"/>
                         </constraints>
                     </view>
                     <connections>

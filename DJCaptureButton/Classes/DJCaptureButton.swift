@@ -49,9 +49,9 @@ open class DJCaptureButton: UIButton {
 
     public var generateFeedback: Bool = true
 
-    internal lazy var impactFeedbackGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .light)
-
     // MARK: - Internal
+
+    internal lazy var impactFeedbackGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .light)
 
     internal var forceTouchGestureRecognizer: ForceTouchGestureRecognizer?
 
@@ -104,6 +104,8 @@ open class DJCaptureButton: UIButton {
     }
 }
 
+// MARK: - Setup
+
 extension DJCaptureButton {
 
     internal func setupButton() {
@@ -137,25 +139,21 @@ extension DJCaptureButton {
         let forceGesture = ForceTouchGestureRecognizer(target: self, action: #selector(handleForce))
         forceGesture.delegate = self
         addGestureRecognizer(forceGesture)
+
         forceTouchGestureRecognizer = forceGesture
     }
-
-    internal func updateMiddleCircle() {
-
-        let offset = borderWidth + middleCircleOffset
-
-        middleCircle.path = UIBezierPath(ovalIn: CGRect(x: offset, y: offset, width: bounds.width - (offset * 2), height: bounds.height - (offset * 2))).cgPath
-    }
 }
+
+// MARK: -
 
 extension DJCaptureButton {
 
     @objc
-    internal func handleTap(gesture: ForceTouchGestureRecognizer) {
+    internal func handleTap(gesture: UITapGestureRecognizer) {
 
         animateTapGesture()
 
-        fireButton()
+        captureButtonFireAction()
     }
 
     @objc
@@ -165,11 +163,21 @@ extension DJCaptureButton {
 
         case .ended, .cancelled:
 
+            if tapGestureRecognizer.isEnabled == false {
+                captureButtonFireAction()
+            }
+
+            gesture.isEnabled = true
+
             resetMiddleCircle(delay: 100)
 
             tapGestureRecognizer.isEnabled = true
 
         case .changed:
+
+            if  tapGestureRecognizer.isEnabled {
+                tapGestureRecognizer.isEnabled = false
+            }
 
             let scale = 1 - min(gesture.force, 0.2)
 
@@ -179,12 +187,9 @@ extension DJCaptureButton {
                 return
             }
 
-            tapGestureRecognizer.isEnabled = false
-
             gesture.isEnabled = false
-            gesture.isEnabled = true
 
-            fireButton()
+//            fireButton()
 
         default:
             break
@@ -194,6 +199,13 @@ extension DJCaptureButton {
 
 extension DJCaptureButton {
 
+    internal func updateMiddleCircle() {
+
+        let offset = borderWidth + middleCircleOffset
+
+        middleCircle.path = UIBezierPath(ovalIn: CGRect(x: offset, y: offset, width: bounds.width - (offset * 2), height: bounds.height - (offset * 2))).cgPath
+    }
+
     internal func resetMiddleCircle(delay milliseconds: Int = 0) {
 
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(milliseconds)) {
@@ -201,7 +213,7 @@ extension DJCaptureButton {
         }
     }
 
-    internal func fireButton() {
+    internal func captureButtonFireAction() {
 
         if generateFeedback {
             impactFeedbackGenerator.impactOccurred()
@@ -220,6 +232,8 @@ extension DJCaptureButton {
         resetMiddleCircle(delay: 100)
     }
 }
+
+// MARK: - UIGestureRecognizerDelegate
 
 extension DJCaptureButton: UIGestureRecognizerDelegate {
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DJCaptureButton'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Camera styled capture button with 3D touch'
 
 # This description is used to generate tags and improve search results.
