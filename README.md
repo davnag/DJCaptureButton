@@ -63,7 +63,7 @@ captureButton.middleCircleColor = .blue
 
 See the *Example* Project.
 
-## Customize
+#### Customize
 Additional properties are available in the Attribute inspector:
 
 ![image](ReadMeAssets/customize-button.png)
