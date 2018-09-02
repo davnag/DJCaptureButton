@@ -1,7 +1,7 @@
 # DJCaptureButton
 Camera styled capture button with 3D touch.
 
-<img src="ReadMeAssets/DJCaptureButton.gif" width="220" height="auto">
+<img src="https://raw.githubusercontent.com/davnag/DJCaptureButton/master/ReadMeAssets/DJCaptureButton.gif" width="220" height="auto">
 
 ## Example
 
@@ -59,18 +59,18 @@ captureButton.middleCircleColor = .blue
 2. Set the "class" property to DJCaptureButton.
 4. Connect the delegate.
 
-![image](ReadMeAssets/connect-delegate.png)
+<img src="https://raw.githubusercontent.com/davnag/DJCaptureButton/master/ReadMeAssets/connect-delegate.png">
 
 See the *Example* Project.
 
 #### Customize
 Additional properties are available in the Attribute inspector:
 
-![image](ReadMeAssets/customize-button.png)
+<img src="https://raw.githubusercontent.com/davnag/DJCaptureButton/master/ReadMeAssets/customize-button.png">
 
 ## Result
 
-![image](ReadMeAssets/add-to-view.png)
+<img src="https://raw.githubusercontent.com/davnag/DJCaptureButton/master/ReadMeAssets/add-to-view.png">
 
 ## Author
 
